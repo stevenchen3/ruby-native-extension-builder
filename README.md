@@ -41,4 +41,4 @@ $ docker build -t rubygem-native-builder .
 $ docker cp rubygem-native-builder:/opt/build/target /path/to/host/directory
 ```
 
-Have fun!
+Currently, it only builds native extensions for `x86_64` Linux. Have fun!

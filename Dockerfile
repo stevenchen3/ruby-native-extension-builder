@@ -19,8 +19,3 @@ RUN \
   gem update --system && \
   cd /opt/build && \
   /bin/bash build.sh
-#  bundle install --path vendor/bundle && \
-#  cd vendor/bundle/ruby && \
-#  tar zcvf nokogiri-1.8.2.tar.gz 2.2.0/extensions/x86_64-linux/2.2.0-static/nokogiri-1.8.2 && \
-#  mv nokogiri-1.8.2.tar.gz /opt/build && \
-#  cd -
