@@ -26,14 +26,12 @@ following (use `nokogiri` as an example), which can be found at your bundle `--p
 
 What really matters here is the `*.so` file, which is what we're trying to make here. Once that is
 ready, you can copy it to its corresponding directory and zip it up as `*.tar.gz`, e.g.,
+`nokogiri-1.8.2.tar.gz`.
 
-```
-tar zcvf nokogiri-1.8.2.tar.gz 2.2.0
-```
 
-Alternatively, the Dockerfile provided in the directory will generate `nokogiri-1.8.2.tar.gz` and
-store it into `/opt/build/target`. And we can use this tarball as an upgrade for what `Traveling Ruby`
-provides. To build native extensions for more gems, add those gem into `Gemfile`, and run the
+The Dockerfile provided in the directory will generate `nokogiri-1.8.2.tar.gz` and
+store it into `/opt/build/target`. And we can use this tarball as an upgrade for the one `Traveling
+Ruby` provides. To build native extensions for more gems, add those gem into `Gemfile`, and run the
 following:
 
 ```
